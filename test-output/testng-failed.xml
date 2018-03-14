@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [phoenix_app_1]">
+  <test name="registerTest(failed)">
+    <classes>
+      <class name="com.lemon.app.WechatLoginCase">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.lemon.app.WechatLoginCase -->
+    </classes>
+  </test> <!-- registerTest(failed) -->
+</suite> <!-- Failed suite [phoenix_app_1] -->
