@@ -7,4 +7,8 @@
           </class>
        </classes>
     </test>
+    <parameter name="deviceName" value="127.0.0.1:62001"></parameter>
+    <parameter name="appPackage" value="com.tencent.mm"></parameter>
+    <parameter name="appActivity" value="com.tencent.mm.ui.LauncherUI"></parameter>
+    <parameter name="restApi" value="http://127.0.0.1:4723/wd/hub"></parameter>
 </suite>

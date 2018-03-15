@@ -2,20 +2,42 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="phoenix_app_1" duration-ms="31793" started-at="2018-03-14T09:58:52Z" finished-at="2018-03-14T09:59:24Z">
+  <suite name="phoenix_app_1" duration-ms="67808" started-at="2018-03-14T12:25:36Z" finished-at="2018-03-14T12:26:44Z">
     <groups>
     </groups>
-    <test name="registerTest" duration-ms="31793" started-at="2018-03-14T09:58:52Z" finished-at="2018-03-14T09:59:24Z">
+    <test name="registerTest" duration-ms="67808" started-at="2018-03-14T12:25:36Z" finished-at="2018-03-14T12:26:44Z">
       <class name="com.lemon.app.WechatLoginCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lemon.app.WechatLoginCase@2c6a3f77]" name="setUp" is-config="true" duration-ms="6943" started-at="2018-03-14T17:58:52Z" finished-at="2018-03-14T17:58:59Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="setUp" is-config="true" duration-ms="40758" started-at="2018-03-14T20:25:36Z" finished-at="2018-03-14T20:26:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[127.0.0.1:62001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.tencent.mm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[com.tencent.mm.ui.LauncherUI]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http://127.0.0.1:4723/wd/hub]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.lemon.app.WechatLoginCase@2c6a3f77]" name="test" duration-ms="24144" started-at="2018-03-14T17:58:59Z" finished-at="2018-03-14T17:59:23Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="test" duration-ms="25809" started-at="2018-03-14T20:26:17Z" finished-at="2018-03-14T20:26:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.WechatLoginCase@2c6a3f77]" name="tearDown" is-config="true" duration-ms="696" started-at="2018-03-14T17:59:23Z" finished-at="2018-03-14T17:59:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="tearDown" is-config="true" duration-ms="1220" started-at="2018-03-14T20:26:43Z" finished-at="2018-03-14T20:26:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

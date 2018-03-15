@@ -141,6 +141,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;phoenix_app_1&quot;&gt;
+  &lt;parameter name=&quot;appPackage&quot; value=&quot;com.tencent.mm&quot;/&gt;
+  &lt;parameter name=&quot;appActivity&quot; value=&quot;com.tencent.mm.ui.LauncherUI&quot;/&gt;
+  &lt;parameter name=&quot;restApi&quot; value=&quot;http://127.0.0.1:4723/wd/hub&quot;/&gt;
+  &lt;parameter name=&quot;deviceName&quot; value=&quot;127.0.0.1:62001&quot;/&gt;
   &lt;test name=&quot;registerTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.lemon.app.WechatLoginCase&quot;/&gt;
@@ -187,12 +191,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'com.lemon.app.WechatLoginCase')
-data.setCell(0, 3, 24144);
+data.setCell(0, 3, 25809);
 window.suiteTableData['phoenix_app_1']= { tableData: data, tableDiv: 'times-div-phoenix_app_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-phoenix_app_1">
               </div> <!-- times-div-phoenix_app_1 -->
             </div> <!-- times-div -->
@@ -220,16 +224,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.lemon.app.WechatLoginCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(127.0.0.1:62001, com.tencent.mm, com.tencent.mm.ui.LauncherUI, http://127.0.0.1:4723/wd/hub)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">6944 ms</span>
+                <span class="method-start">40770 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31089 ms</span>
+                <span class="method-start">66580 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
