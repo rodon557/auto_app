@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="phoenix_app_1">
+    <test name="registerTest">
+       <classes>
+          <class name="com.lemon.app.WechatLoginCase"> 
+          </class>
+       </classes>
+    </test>
+    <parameter name="deviceName" value="127.0.0.1:62001"></parameter>
+    <parameter name="appPackage" value="com.tencent.mm"></parameter>
+    <parameter name="appActivity" value="com.tencent.mm.ui.LauncherUI"></parameter>
+    <parameter name="restApi" value="http://127.0.0.1:4723/wd/hub"></parameter>
+</suite>

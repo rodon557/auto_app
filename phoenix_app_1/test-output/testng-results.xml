@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="phoenix_app_1" duration-ms="38693" started-at="2018-03-16T09:58:59Z" finished-at="2018-03-16T09:59:38Z">
+    <groups>
+    </groups>
+    <test name="registerTest" duration-ms="38693" started-at="2018-03-16T09:58:59Z" finished-at="2018-03-16T09:59:38Z">
+      <class name="com.lemon.app.WechatLoginCase">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="setUp" is-config="true" duration-ms="11370" started-at="2018-03-16T17:58:59Z" finished-at="2018-03-16T17:59:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[127.0.0.1:62001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.tencent.mm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[com.tencent.mm.ui.LauncherUI]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http://127.0.0.1:4723/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="test" duration-ms="26533" started-at="2018-03-16T17:59:11Z" finished-at="2018-03-16T17:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.WechatLoginCase@5d624da6]" name="tearDown" is-config="true" duration-ms="776" started-at="2018-03-16T17:59:37Z" finished-at="2018-03-16T17:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lemon.app.WechatLoginCase -->
+    </test> <!-- registerTest -->
+  </suite> <!-- phoenix_app_1 -->
+</testng-results>
