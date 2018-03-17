@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [phoenix_app_1]">
+  <parameter name="appPackage" value="com.tencent.mm"/>
+  <parameter name="appActivity" value="com.tencent.mm.ui.LauncherUI"/>
+  <parameter name="restApi" value="http://127.0.0.1:4723/wd/hub"/>
+  <parameter name="deviceName" value="127.0.0.1:62001"/>
   <test name="registerTest(failed)">
     <classes>
       <class name="com.lemon.app.WechatLoginCase">
         <methods>
           <include name="test"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.lemon.app.WechatLoginCase -->
     </classes>

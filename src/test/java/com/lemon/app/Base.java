@@ -17,6 +17,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.lemon.app.po.pojo.Activity;
+import com.lemon.app.po.pojo.Locator;
+import com.lemon.app.util.ActivityUtil;
+
 public class Base {
 	//deviceName:127.0.0.1:62001
 		private AppiumDriver androidDriver;
@@ -40,11 +44,30 @@ public class Base {
 				
 			}
 		     
-		     public WebElement getElement(final By by){
+		     public WebElement getElement(final String page,final String keyword){
 		    	 WebDriverWait wait=new WebDriverWait(androidDriver,30);
 		    	 WebElement webElement =wait.until(new ExpectedCondition<WebElement>(){
 		    		 public WebElement apply(WebDriver androidDriver){
-		    			 return androidDriver.findElement(by);
+		    			 Locator neededLocator=null;
+		    			 for (Activity activity : ActivityUtil.activitiesList) {
+								if(page.equals(activity.getKey())){
+									List<Locator>locators=activity.getLocators();
+									for(Locator locator:locators){
+										if(locator.getDesc().equals(keyword)){
+											neededLocator=locator;
+										}
+									}
+								}
+							};
+							By by=null;
+							if("id".equals(neededLocator.getBy())){
+								by=By.id(neededLocator.getValue());
+								return androidDriver.findElement(by);
+							}else if("className".equals(neededLocator.getBy())){
+								by=By.className(neededLocator.getValue());
+								return androidDriver.findElements(by).get(Integer.valueOf(neededLocator.getIndex()));
+							}
+		    			 return null;
 		    		 }
 		    	 });
 		    	 return webElement;
