@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+    <!-- 定义每一个activity页面 -->
+	<activity key="登录注册页面" value="com.tencent.mm.ui.LauncherUI">
+	    <!-- 每一个locator是描述的一个元素定位信息 -->
+		<locator by="id" value="d36" desc="注册按钮">注册</locator>
+		<locator by="id" value="d37" desc="登录按钮">登录</locator>
+	</activity>
+	<activity key="注册信息页面" value="com.tencent.mm.ui.account.RegByMobileRegAIOUI">
+	    <!-- 每一个locator是描述的一个元素定位信息 -->
+		<locator by="className" value="android.widget.EditText" desc="昵称" index="0">昵称</locator>
+		<locator by="className" value="android.widget.EditText" desc="手机号输入框" index="1">手机号</locator>
+		<locator by="className" value="android.widget.EditText" desc="密码输入框" index="2">密码</locator>
+		<locator by="id" value="cw1" desc="注册按钮"></locator>
+		<locator by="id" value="cvy" desc="头像"></locator>
+		<locator by="id" value="c_n" desc="注册失败标题"></locator>
+		<locator by="id" value="aln" desc="弹框确定"></locator>
+	</activity>
+	<activity key="同意协议页面" value="com.tencent.mm.ui.account.ShowAgreementsUI">
+	    <!-- 每一个locator是描述的一个元素定位信息 -->
+		<locator by="id" value="d91" desc="同意按钮"></locator>
+	</activity>
+</activities>
