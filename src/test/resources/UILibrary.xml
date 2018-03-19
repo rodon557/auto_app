@@ -13,7 +13,8 @@
 		<locator by="className" value="android.widget.EditText" desc="密码输入框" index="2">密码</locator>
 		<locator by="id" value="cw1" desc="注册按钮"></locator>
 		<locator by="id" value="cvy" desc="头像"></locator>
-		<locator by="id" value="c_n" desc="注册失败标题"></locator>
+		<locator by="id" value="c_n" desc="弹框提示标题"></locator>
+		<locator by="id" value="c_r" desc="弹框提示内容"></locator>
 		<locator by="id" value="aln" desc="弹框确定"></locator>
 	</activity>
 	<activity key="同意协议页面" value="com.tencent.mm.ui.account.ShowAgreementsUI">

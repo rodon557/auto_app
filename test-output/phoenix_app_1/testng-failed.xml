@@ -9,7 +9,7 @@
     <classes>
       <class name="com.lemon.app.WechatLoginCase">
         <methods>
-          <include name="test"/>
+          <include name="test" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

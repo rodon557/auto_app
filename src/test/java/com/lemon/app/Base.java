@@ -14,7 +14,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.lemon.app.po.pojo.Activity;
@@ -23,9 +25,11 @@ import com.lemon.app.util.ActivityUtil;
 
 public class Base {
 	//deviceName:127.0.0.1:62001
-		private AppiumDriver androidDriver;
+	//	private AppiumDriver androidDriver;
+		public static AndroidDriver<WebElement> androidDriver;
 		
-		@BeforeClass
+		
+		@BeforeSuite
 		@Parameters({"deviceName","appPackage","appActivity","restApi"})
 		public void setUp(String deviceName,String appPackage,String appActivity,String restApi) throws MalformedURLException{
 			//配置对象，添加deviceName,appPackage,appActivity信息
@@ -38,7 +42,7 @@ public class Base {
 			//创建驱动对象
 			androidDriver=new AndroidDriver(url,desiredCapabilities);
 		}
-		  @AfterClass
+		  @AfterSuite
 			public void tearDown() {
 				androidDriver.quit();
 				
