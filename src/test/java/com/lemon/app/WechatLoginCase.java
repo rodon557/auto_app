@@ -1,6 +1,8 @@
 package com.lemon.app;
 
 import java.util.List;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.springframework.util.StringUtils;
@@ -8,42 +10,45 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.lemon.app.util.Assertion;
 import com.lemon.app.util.ExcelUtil;
 public class WechatLoginCase extends Base {
-	
+	private Logger logger=Logger.getLogger(WechatLoginCase.class);
 	@Test(dataProvider="datas1")
 	public void test(String nickname,String mobilephone,String password,String errortitle,String allmessage){
 		//点击注册按钮
+		logger.info("测试输入数据不合法");
 		androidDriver.startActivity("com.tencent.mm", "com.tencent.mm.ui.LauncherUI");
-		getElement("登录注册页面","注册按钮").click();
-		getElement("注册信息页面","昵称").sendKeys(nickname);
-		getElement("注册信息页面","手机号输入框").sendKeys(mobilephone);
-		getElement("注册信息页面","密码输入框").sendKeys(password);
-		getElement("注册信息页面","注册按钮").click();
-		getElement("同意协议页面","同意按钮").click();
-		String actual_title=getElement("注册信息页面","弹框提示标题").getText();
-		Assert.assertEquals(actual_title, errortitle);		
-		String actual=getElement("注册信息页面","弹框提示内容").getText();
-		Assert.assertEquals(actual, allmessage);
-		getElement("注册信息页面","弹框确定").click();
+		click(getElement("登录注册页面","注册按钮"));
+		sendKeys(getElement("注册信息页面","昵称"),nickname);
+		sendKeys(getElement("注册信息页面","手机号输入框"),mobilephone);
+		sendKeys(getElement("注册信息页面","密码输入框"),password);
+		click(getElement("注册信息页面","注册按钮"));
+		click(getElement("同意协议页面","同意按钮"));
+		String actual_title=getText(getElement("注册信息页面","弹框提示标题"));
+		Assertion.assertEquals(actual_title, errortitle);		
+		String actual=getText(getElement("注册信息页面","弹框提示内容"));
+		Assertion.assertEquals(actual, allmessage);
+		click(getElement("注册信息页面","弹框确定"));
 	}
 	@Test(dataProvider="datas2")
     //测试注册按钮不可点击
 	public void test2(String nickname,String mobilephone,String password){
 		//点击注册按钮
+		logger.info("测试注册按钮不可点击");
 		androidDriver.startActivity("com.tencent.mm", "com.tencent.mm.ui.LauncherUI");
-		getElement("登录注册页面","注册按钮").click();
+		click(getElement("登录注册页面","注册按钮"));
         if(!StringUtils.isEmpty(nickname)){
-        	getElement("注册信息页面","昵称").sendKeys(nickname);
+        	sendKeys(getElement("注册信息页面","昵称"),nickname);
 		}
         if(!StringUtils.isEmpty(mobilephone)){
-        	getElement("注册信息页面","手机号输入框").sendKeys(mobilephone);
+        	sendKeys(getElement("注册信息页面","手机号输入框"),mobilephone);
         }
         if(!StringUtils.isEmpty(password)){
-        	getElement("注册信息页面","密码输入框").sendKeys(password);
+        	sendKeys(getElement("注册信息页面","密码输入框"),password);
         }
         boolean actual=getElement("注册信息页面","注册按钮").isEnabled();
-		Assert.assertEquals(actual, false);		
+        Assertion.assertFalse(actual);		
 	}
 	
 	@DataProvider

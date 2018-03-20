@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="phoenix_app_1" duration-ms="98399" started-at="2018-03-19T07:38:42Z" finished-at="2018-03-19T07:40:21Z">
+  <suite name="phoenix_app_1" duration-ms="90788" started-at="2018-03-20T01:28:00Z" finished-at="2018-03-20T01:29:30Z">
     <groups>
     </groups>
-    <test name="registerTest" duration-ms="98399" started-at="2018-03-19T07:38:42Z" finished-at="2018-03-19T07:40:21Z">
+    <test name="registerTest" duration-ms="90788" started-at="2018-03-20T01:28:00Z" finished-at="2018-03-20T01:29:30Z">
       <class name="com.lemon.app.WechatLoginCase">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="setUp" is-config="true" duration-ms="7096" started-at="2018-03-19T15:38:35Z" finished-at="2018-03-19T15:38:42Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="setUp" is-config="true" duration-ms="6854" started-at="2018-03-20T09:27:53Z" finished-at="2018-03-20T09:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="test" duration-ms="28200" started-at="2018-03-19T15:38:43Z" data-provider="datas1" finished-at="2018-03-19T15:39:11Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="test" duration-ms="25773" started-at="2018-03-20T09:28:00Z" data-provider="datas1" finished-at="2018-03-20T09:28:26Z">
           <params>
             <param index="0">
               <value>
@@ -72,7 +72,8 @@
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.lemon.app.WechatLoginCase.test(WechatLoginCase.java:25)
+	at com.lemon.app.util.Assertion.assertEquals(Assertion.java:11)
+	at com.lemon.app.WechatLoginCase.test(WechatLoginCase.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="test" duration-ms="31583" started-at="2018-03-19T15:39:11Z" data-provider="datas1" finished-at="2018-03-19T15:39:43Z">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="test" duration-ms="29897" started-at="2018-03-20T09:28:26Z" data-provider="datas1" finished-at="2018-03-20T09:28:56Z">
           <params>
             <param index="0">
               <value>
@@ -134,7 +135,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="test2" duration-ms="7214" started-at="2018-03-19T15:39:43Z" data-provider="datas2" finished-at="2018-03-19T15:39:50Z">
+        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="test2" duration-ms="6600" started-at="2018-03-20T09:28:56Z" data-provider="datas2" finished-at="2018-03-20T09:29:03Z">
           <params>
             <param index="0">
               <value>
@@ -155,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="test2" duration-ms="12532" started-at="2018-03-19T15:39:50Z" data-provider="datas2" finished-at="2018-03-19T15:40:03Z">
+        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="test2" duration-ms="11139" started-at="2018-03-20T09:29:03Z" data-provider="datas2" finished-at="2018-03-20T09:29:14Z">
           <params>
             <param index="0">
               <value>
@@ -176,7 +177,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="test2" duration-ms="18209" started-at="2018-03-19T15:40:03Z" data-provider="datas2" finished-at="2018-03-19T15:40:21Z">
+        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="test2" duration-ms="16678" started-at="2018-03-20T09:29:14Z" data-provider="datas2" finished-at="2018-03-20T09:29:30Z">
           <params>
             <param index="0">
               <value>
@@ -197,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.WechatLoginCase@59a6e353]" name="tearDown" is-config="true" duration-ms="827" started-at="2018-03-19T15:40:21Z" finished-at="2018-03-19T15:40:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lemon.app.WechatLoginCase@5f375618]" name="tearDown" is-config="true" duration-ms="712" started-at="2018-03-20T09:29:30Z" finished-at="2018-03-20T09:29:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
