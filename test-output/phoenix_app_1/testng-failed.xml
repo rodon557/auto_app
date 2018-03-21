@@ -5,13 +5,17 @@
   <parameter name="appActivity" value="com.tencent.mm.ui.LauncherUI"/>
   <parameter name="restApi" value="http://127.0.0.1:4723/wd/hub"/>
   <parameter name="deviceName" value="127.0.0.1:62001"/>
+  <listeners>
+    <listener class-name="com.lemon.phoenix.listener.TestListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
   <test name="registerTest(failed)">
     <classes>
       <class name="com.lemon.app.WechatLoginCase">
         <methods>
-          <include name="test" invocation-numbers="0"/>
+          <include name="test2"/>
+          <include name="test"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.lemon.app.WechatLoginCase -->
     </classes>

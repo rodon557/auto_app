@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-phoenix_app_1">
-              <span class="suite-name border-failed">phoenix_app_1</span>
+              <span class="suite-name border-skipped">phoenix_app_1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,50 +90,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">5 methods,  5 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-phoenix_app_1" class="hide-methods failed suite-phoenix_app_1"> (hide)</a> <!-- hide-methods failed suite-phoenix_app_1 -->
-                      <a href="#" panel-name="suite-phoenix_app_1" class="show-methods failed suite-phoenix_app_1"> (show)</a> <!-- show-methods failed suite-phoenix_app_1 -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-phoenix_app_1" class="hide-methods skipped suite-phoenix_app_1"> (hide)</a> <!-- hide-methods skipped suite-phoenix_app_1 -->
+                      <a href="#" panel-name="suite-phoenix_app_1" class="show-methods skipped suite-phoenix_app_1"> (show)</a> <!-- show-methods skipped suite-phoenix_app_1 -->
                     </span>
-                    <div class="method-list-content failed suite-phoenix_app_1">
+                    <div class="method-list-content skipped suite-phoenix_app_1">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)">test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-phoenix_app_1 -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-phoenix_app_1" class="hide-methods passed suite-phoenix_app_1"> (hide)</a> <!-- hide-methods passed suite-phoenix_app_1 -->
-                      <a href="#" panel-name="suite-phoenix_app_1" class="show-methods passed suite-phoenix_app_1"> (show)</a> <!-- show-methods passed suite-phoenix_app_1 -->
-                    </span>
-                    <div class="method-list-content passed suite-phoenix_app_1">
-                      <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test(aa, 18583103456, 111, 注册失败, 密码必须是8-16位的数字、字符组合（不能是纯数字）)">test(aa, 18583103456, 111, 注册失败, 密码必须是8-16位的数字、字符组合（不能是纯数字）)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)">test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test2(qq, , )">test2(qq, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test2(qq, 18813984521, )">test2(qq, 18813984521, )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test2(, , )">test2(, , )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-phoenix_app_1" title="com.lemon.app.WechatLoginCase" hash-for-method="test2(qq, , )">test2(qq, , )</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-phoenix_app_1 -->
+                    </div> <!-- method-list-content skipped suite-phoenix_app_1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -145,30 +136,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-phoenix_app_1" class="panel phoenix_app_1">
-          <div class="suite-phoenix_app_1-class-failed">
+          <div class="suite-phoenix_app_1-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.lemon.app.WechatLoginCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)">
-                  </a> <!-- test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码) -->
-                  <span class="method-name">test</span>
-                  <span class="parameters">(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [手机号码错误] but found [注册失败]
-	at com.lemon.app.util.Assertion.assertEquals(Assertion.java:11)
-	at com.lemon.app.WechatLoginCase.test(WechatLoginCase.java:29)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-phoenix_app_1-class-failed -->
-          <div class="suite-phoenix_app_1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.lemon.app.WechatLoginCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -178,6 +148,22 @@
                   </a> <!-- test(aa, 18583103456, 111, 注册失败, 密码必须是8-16位的数字、字符组合（不能是纯数字）) -->
                   <span class="method-name">test</span>
                   <span class="parameters">(aa, 18583103456, 111, 注册失败, 密码必须是8-16位的数字、字符组合（不能是纯数字）)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)">
+                  </a> <!-- test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2(qq, , )">
+                  </a> <!-- test2(qq, , ) -->
+                  <span class="method-name">test2</span>
+                  <span class="parameters">(qq, , )</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -196,16 +182,8 @@
                   <span class="parameters">(, , )</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test2(qq, , )">
-                  </a> <!-- test2(qq, , ) -->
-                  <span class="method-name">test2</span>
-                  <span class="parameters">(qq, , )</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-phoenix_app_1-class-passed -->
+          </div> <!-- suite-phoenix_app_1-class-skipped -->
         </div> <!-- panel phoenix_app_1 -->
         <div panel-name="test-xml-phoenix_app_1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -220,6 +198,10 @@
   &lt;parameter name=&quot;appActivity&quot; value=&quot;com.tencent.mm.ui.LauncherUI&quot;/&gt;
   &lt;parameter name=&quot;restApi&quot; value=&quot;http://127.0.0.1:4723/wd/hub&quot;/&gt;
   &lt;parameter name=&quot;deviceName&quot; value=&quot;127.0.0.1:62001&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.lemon.phoenix.listener.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;registerTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.lemon.app.WechatLoginCase&quot;/&gt;
@@ -264,30 +246,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
+data.setCell(0, 1, 'test2')
 data.setCell(0, 2, 'com.lemon.app.WechatLoginCase')
-data.setCell(0, 3, 29897);
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test')
+data.setCell(1, 1, 'test2')
 data.setCell(1, 2, 'com.lemon.app.WechatLoginCase')
-data.setCell(1, 3, 25773);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test2')
+data.setCell(2, 1, 'test')
 data.setCell(2, 2, 'com.lemon.app.WechatLoginCase')
-data.setCell(2, 3, 16678);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test2')
 data.setCell(3, 2, 'com.lemon.app.WechatLoginCase')
-data.setCell(3, 3, 11139);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test2')
+data.setCell(4, 1, 'test')
 data.setCell(4, 2, 'com.lemon.app.WechatLoginCase')
-data.setCell(4, 3, 6600);
+data.setCell(4, 3, 0);
 window.suiteTableData['phoenix_app_1']= { tableData: data, tableDiv: 'times-div-phoenix_app_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-phoenix_app_1">
               </div> <!-- times-div-phoenix_app_1 -->
             </div> <!-- times-div -->
@@ -315,35 +297,31 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.lemon.app.WechatLoginCase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp(127.0.0.1:62001, com.tencent.mm, com.tencent.mm.ui.LauncherUI, http://127.0.0.1:4723/wd/hub)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test(aa, 188, njhg11, 手机号码错误, 你输入的是一个无效的手机号码)</span>
-                <span class="method-start">7495 ms</span>
+                <span class="method-start">2171 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test(aa, 18583103456, 111, 注册失败, 密码必须是8-16位的数字、字符组合（不能是纯数字）)</span>
-                <span class="method-start">33270 ms</span>
+                <span class="method-start">2172 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test2(, , )</span>
-                <span class="method-start">63219 ms</span>
+                <span class="method-start">2201 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test2(qq, , )</span>
-                <span class="method-start">69821 ms</span>
+                <span class="method-start">2202 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test2(qq, 18813984521, )</span>
-                <span class="method-start">80961 ms</span>
+                <span class="method-start">2202 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">97660 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

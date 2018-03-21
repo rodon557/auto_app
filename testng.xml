@@ -11,4 +11,8 @@
     <parameter name="appPackage" value="com.tencent.mm"></parameter>
     <parameter name="appActivity" value="com.tencent.mm.ui.LauncherUI"></parameter>
     <parameter name="restApi" value="http://127.0.0.1:4723/wd/hub"></parameter>
+    <listeners>
+		<listener class-name="com.lemon.phoenix.listener.TestListener"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
 </suite>
